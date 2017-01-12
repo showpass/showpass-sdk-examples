@@ -24,7 +24,7 @@ library, and another spot to configure the event slug you wish to purchase for.
 ### Run Server
 
 ```
-gulp serve
+npm start
 ```
 
 ### Open browser
