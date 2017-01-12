@@ -16,11 +16,6 @@ Follow these steps to run a demo.
 npm install
 ```
 
-### Configure Server Host
-
-In `src/website.html`, you will find a spot to configure the URL to the SDK
-library, and another spot to configure the event slug you wish to purchase for.
-
 ### Run Server
 
 ```
