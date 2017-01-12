@@ -1,19 +1,15 @@
 {
-  "name": "temp-widget",
+  "name": "showpass-sdk-examples",
   "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "description": "Contains various examples demonstrating how to use the Showpass SDK. ",
   "devDependencies": {
     "gulp": "3.9.1",
     "gulp-connect": "5.0.0",
     "gulp-webserver": "0.9.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp serve"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "gulp-server-livereload": "1.9.2"
-  }
+  "author": "Showpass",
+  "license": "MIT"
 }
