@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body.pc ul.event_list li {
+	margin-right: 6px;
+}
+body.pc .photos .fotorama__wrap .fotorama__nav-wrap {
+	position: absolute;
+	bottom: 0;
+	z-index: 10101;
+}
+body.pc .loadmore_holder a i, body.pc .fa {
+	font-size: 14pt;
+}
+
+
+}

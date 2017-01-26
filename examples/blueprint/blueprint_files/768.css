@@ -1,0 +1,553 @@
+/* CSS Document */
+
+/* tablet portrait */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	
+/* MISC ELEMENTS */
+
+img#img_mobile {
+	display: none;
+}
+
+h1.pop_posts {
+	width: 750px;
+}
+input {
+	-webkit-border-radius: 0px !important;
+	-webkit-appearance: none;
+}
+	input[type=checkbox]{
+		-webkit-appearance: checkbox;
+    	background-color: #FFF;
+		width: 12px;
+		height: 12px;
+		-webkit-border-radius: 8px;
+	}
+.post_infobar {
+	font-size: 7pt;
+}
+
+/* HEADER */
+.wrapper {
+	width: 768px;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+}
+.topbar .social {
+	display: none;
+}
+.topbar_content {
+	width: 768px;
+}
+#top_nav {
+	width: 768px;
+	margin: 0;
+}
+#top_nav ul li a {
+	font-size: 10pt;
+}
+#top_nav ul li:last-child a, #top_nav ul li a.company {
+	margin-left: 20px;
+}
+.subscribe_box {
+	right: 16px;
+}
+
+/* FOOTER */
+
+.footer_section .subscribe_box input[type='email'] {
+	width: 112px;
+}
+
+/* BANNERS */
+
+#slider_wrapper {
+	margin: 0 0 -40px 0;
+	width: 768px;
+	height: 300px;
+	position: relative;
+	background-color: #000;
+}
+#slider_wrapper .camera_wrap {
+	width: 100%;
+	height: 300px;
+}
+#slider_wrapper .camera_caption img {
+	width: 768px;
+	height: 300px;
+}
+#slider_wrapper_wide{
+	width: 750px;
+	height: 196px;
+	margin: 0 auto 10px;
+}
+	.corporate#slider_wrapper, .corporate#slider_wrapper .camera_wrap, .corporate#slider_wrapper .camera_caption img {
+		height: 375px;
+	}
+ #slider_wrapper_wide img {
+	 max-height: 100%;
+	 max-width: 100%;
+}
+
+.sidebar {
+	width: 100%;
+	margin: 20px 0 0 0;
+}
+.side_banner {
+	margin: 0 20px 12px 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* TAB NAV */
+
+.tab_nav_holder {
+	width: 750px;
+}
+
+/* TAGS */
+
+.tags_more li a {
+	padding: 0 6px;
+	white-space: nowrap;
+}
+
+/* CONTENT BOXES */
+
+.content_box {
+	width: 738px;
+}
+.content_box#galleries {
+	width: 744px !important; /* taking into account 0px right padding */
+}
+
+.content_box#single #box_content, .content_box#properties #box_content, .content_box#guestlists #box_content, .content_box#company #box_content, .content_box#app #box_content {
+	background-color: #FFF;
+	padding: 15px;
+	display: table;
+	width: 738px;
+	box-sizing: border-box;
+}
+.content_box#company #box_content {
+	width: 708px;
+}
+
+
+/* POPULAR/RELATED POSTS */
+
+.content_box#pop_posts {
+	width: 734px;
+}
+
+/* NEWS */
+
+.news_box, .news_1 {
+	float: none;
+	display: inline-block;
+}
+.news_box#lg {
+	width: 726px;
+}
+.img_holder {
+	width: 100%;
+	overflow: hidden; 
+	position: relative;
+}
+.img_holder#news_lg {
+	height: 210px;
+}
+.img_holder#news_lg img {
+	width: 100%;
+	margin-top: -16px;
+}
+.news_box#sm {
+	width: 357px;
+}
+.img_holder#news_sm {
+	height: 130px;
+}
+.img_holder#news_sm img {
+	width: 100%;
+	margin-top: -11px;
+}
+.left_col#news {
+	width: 100%;
+}
+.img_holder#news {
+	width: 418px;
+}
+.img_holder#news img {
+	max-width: 100%;
+}
+
+/* GALLERIES */
+
+.gallery_holder#home {
+	width: 410px;
+}
+	.default_img#home {
+		width: 410px;
+		height: 300px;
+	}
+	/*.default_img#main {
+		width: 650px;
+		height: 433px;
+	}*/
+.gallery_holder#home .fotorama--wp {
+	margin: 2em 0;
+}
+.music .gallery_holder#home {
+	width: 726px;
+}
+
+.gallerylist_holder#photos {
+	height: 320px;
+}
+
+.gallerylist_holder {
+	width: 308px;
+}
+ul.gallerylist>li {
+	width: 300px;
+}
+.gallerylist_wrapper#main .gallerylist_holder ul.gallerylist>li, .music .gallerylist_holder ul.gallerylist>li {
+	width: 356px;
+}
+
+.content_box_holder#main .content_box#galleries {
+	width: 768px !important;
+	height: 375px;
+}
+.gallery_holder#main #the_video {
+	height: 375px;
+	width: 768px;
+	left: -59px;
+}
+.gallery_holder#home #the_video {
+	margin: 0;
+	width: 410px;
+	height: 320px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.music .gallery_holder#home #the_video {
+	width: 738px;
+}
+.gallery_holder#main #the_music {
+	height: 325px;
+}
+.gallery_holder#main .prev_next_arrows {
+	right: -35px;
+}
+
+/* EVENTS */
+
+ul.event_list li .ticket_box, ul.event_list li:hover .ticket_box {
+	opacity: 0.0;
+	display: none;
+}
+
+ul.event_list li {
+	width: 170px;
+}
+ul.event_list li img {
+	max-width: 100%;
+}
+ul.event_list .ticket_box {
+	width: 170px;
+	height: 261px;
+}
+.event_box .info {
+	margin: 3px 6px 0;
+}
+.event_box h2 {
+	margin: 0 0 3px 0;
+}
+.img_holder#events {
+	width: 300px;
+}
+.img_holder#events img {
+	max-width: 100%;
+}
+.info_holder#events iframe {
+	width: 708px !important;
+	max-width: 708px;
+	margin-left: -315px;
+}
+
+.tab_nav_holder#events_home, .tab_nav_holder#events {
+	margin-bottom: 0px;
+	height: 65px;
+}
+	.tab_nav_holder#events {
+		margin-bottom: 3px;
+	}
+.tab_nav_holder#events_home ul.tab_nav, .tab_nav_holder#events ul.tab_nav {
+	min-height: 11px;
+	max-height: 35px;
+	margin: 0 0 0 9px;
+}
+	.tab_nav_holder#events ul.tab_nav {
+		margin-left: 6px;
+	}
+.tab_nav_holder#events_home ul.tab_nav li, .tab_nav_holder#events ul.tab_nav li {
+	width: 22%;
+	padding: 0 8px;
+	margin: 0;
+	border: 2px solid #000 !important;
+}
+
+/* PROMOTIONS */
+
+.grey_box#promotions {
+	width: 326px;
+	height: 205px;
+}
+.grey_box#promotions img {
+	max-width: 100%;
+}
+
+/* PROPERTIES */
+
+.content_box#properties .right_col {
+	height: auto;
+	width: 400px;
+}
+.content_box#properties .right_col#festivals, .content_box#properties .right_col#liquorstores {
+	width: 400px;
+}
+.content_box#properties .property_header {
+	display: inline-block;
+	position: relative;
+	width: 410px;
+	min-height: 75px;
+}
+.content_box#properties .property_header #property_logo {
+	margin-left: 0;
+}
+.content_box#properties .property_header_right {
+	float: none;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 175px;
+}
+.content_box#properties .property_header #property_logo img {
+	max-width: 150px;
+}
+.property_address, .social#properties {
+	float: none;
+}
+.property_address {
+	margin: 0;
+}
+.social#properties, .social#properties ul  {
+	margin: 0;
+}
+.social#properties ul li {
+	margin: 3px 2px 0 0;
+}
+.box_holder .box_link {
+	width: 128px;
+}
+.right_col#liquorstores .property_header a.logo_link {
+	display: block;
+	margin: 0;
+	text-align: center;
+}
+.content_box#properties .right_col#liquorstores .property_header_right, .right_col#festivals .property_header_right {
+	float: none;
+	width: 100%;
+	margin-top: 15px;
+	display: block;
+	left: auto;
+	top: auto;
+	position: inherit;
+}
+.right_col#liquorstores .property_header a.property_website {
+	display: inline-block;
+	float: left;
+	margin: 10px 0 6px 0;
+}
+.right_col#liquorstores .property_header_right .social {
+	display: inline-block;
+	float: right;
+	margin: 0;
+}
+
+/* COMPANY */
+
+#slider_wrapper .corporate_header img {
+	max-width: 100%;
+}
+
+.info_holder#corporate {
+	width: 708px;
+}
+
+#company ul.tab_nav li {
+	font-size: 9pt;
+}
+#company ul.tab_nav li a {
+	padding: 0 6px;
+}
+
+.grey_box#corporate_services, .grey_box#corporate_wide {
+	width: 688px;
+}
+.grey_box#guestlists {
+	width: 668px;
+}
+.right_col#guestlists {
+	padding: 20px 0 0 0px;
+	width: 230px;
+}
+
+.grey_box#corporate_services .info, .grey_box#corporate_wide .info .info {
+	width: 520px;
+	height: auto;
+	margin: 0;
+	position: relative;
+	font-size: 9pt;
+}
+.grey_box#corporate {
+	width: 328px;
+	height: 110px;
+}
+.grey_box#corporate img#article_thumb {
+	position: inherit	;
+	top:auto;
+	left: auto;
+	width: 100px;
+	margin: 0 5px 5px 0;
+	display:inline-block;
+}
+.grey_box#corporate .article_info {
+	width: 220px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0;
+}
+.grey_box#corporate .button {
+	right: auto;
+	left: 10px;
+	padding: 0;
+	display: inline-block;
+	height: 18px;
+	margin: 0;
+	text-align: center;
+	float: right;
+	line-height: 1.8em;
+	width: 100px
+}
+
+.grey_box#corporate_services ul {
+	position: inherit;
+}
+
+.grey_box#corporate .jobs_link_holder {
+	margin: 0;
+	width: 100px;
+}
+.jobs_link {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	height: 90px;
+	background-color: #CCC;
+	padding: 6px;
+}
+.grey_box#corporate .jobs_link img {
+	max-width: 100%;
+}
+
+/*.jobs#corporate .button {
+	position: absolute;
+	bottom: 8px;
+	right: 8px;
+	padding: 0px 8px;
+	display: inline-block;
+	height: 18px;
+	margin: 0;
+	text-align: center;
+	float: none;
+	line-height: 1.8em;
+}*/
+
+.grey_box#job_listing {
+	width: 335px;	
+}
+.grey_box#job_listing h1.box_header {
+	height: 43px;
+}
+.grey_box#job_listing h1.box_header span {
+	display: block;
+	margin: 5px 0 0 0;
+	float: none;
+}
+.article_info { /* used on job application page */
+	margin-top: 15px;
+}
+.left_col#corp_bookings {
+	width: 345px;
+}
+
+.speclinks_holder > div.speclink_holder {
+	width: 130px;
+	margin: 0 10px 10px 0;
+}
+.speclinks_holder > div.speclink_holder a {
+	width: 114px;
+	padding: 0 8px;
+}
+.speclinks_holder > div.speclink_holder a img {
+	max-width: 100%;
+}
+
+
+
+.scroller_holder {
+	height: 158px;
+	width: 738px;
+	margin: 20px 0 -16px -15px;
+	overflow-x: scroll;
+    overflow-y: hidden;
+	position:relative;
+}
+
+/*.scroll_right {
+	width: 40%;
+	height: 200px;
+	background-image:url(images/spacer.gif);
+	right: 0;
+	position: absolute;
+}*/
+.scrollee {
+	display: inline-block;
+	white-space: nowrap;
+	margin: 0;
+}
+.scrollee_img_holder {
+	width: 187px;
+}
+.scrollee_img_holder img {
+	max-width: 100%;
+}
+
+/* SEARCH & TAG RESULTS */
+
+.search_result h1 {
+	max-width: 560px;
+}
+
+/* BP APP PAGE */
+.right_col#app {
+	width: 430px;
+}
+.img_holder#app {
+	width: 99%;
+}
+
+} /* END MEDIA QUERY */
