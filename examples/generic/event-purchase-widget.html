@@ -57,17 +57,17 @@ To use, change the event slug to event that you wish to sell for.
 <body>
 <div>
   <div style="text-align: center">
-    <button onclick="showpass.tickets.eventPurchaseWidget('free-event', {'theme-primary': '#333333', 'keep-shopping': true})"> <!-- CONFIGURE EVENT SLUG HERE -->
-      Free Event
+    <button onclick="showpass.tickets.eventPurchaseWidget('free-event', {'theme-primary': '#333333', 'keep-shopping': false})"> <!-- CONFIGURE EVENT SLUG HERE -->
+      Free Event - Keep Shopping False
     </button>
-    <button onclick="showpass.tickets.eventPurchaseWidget('bundle-child-event', {'theme-primary': '#333333', 'keep-shopping': true})"> <!-- CONFIGURE EVENT SLUG HERE -->
-      Bundle Child Event
+    <button onclick="showpass.tickets.eventPurchaseWidget('bundle-child-event', {'theme-primary': '#333333'})"> <!-- CONFIGURE EVENT SLUG HERE -->
+      Bundle Child Event - Keep Shopping True
     </button>
-    <button onclick="showpass.tickets.eventPurchaseWidget('test-assigned-seating', {'theme-primary': '#333333', 'keep-shopping': true})"> <!-- CONFIGURE EVENT SLUG HERE -->
-      Test Assign Seating
+    <button onclick="showpass.tickets.eventPurchaseWidget('test-assigned-seating', {'theme-primary': '#333333', 'keep-shopping': false})"> <!-- CONFIGURE EVENT SLUG HERE -->
+      Test Assign Seating - False
     </button>
     <button onclick="showpass.tickets.eventPurchaseWidget('new-password', {'theme-primary': '#333333', 'keep-shopping': true})"> <!-- CONFIGURE EVENT SLUG HERE -->
-      Password is Password
+      Password is Password - True
     </button>
     <button onclick="showpass.tickets.checkoutWidget({'theme-primary': '#333333', 'keep-shopping': true})"> <!-- CONFIGURE EVENT SLUG HERE -->
       Checkout Widget
