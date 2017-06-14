@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Showpass Event Widget</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://unpkg.com/vue"></script>   
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                    <header>
+                        <h1>Showpass Event Widget</h1>
+                    </header>
+                    <section>
+                        <h2>What is the Showpass Event Widget?</h2>
+                        <p>You can embbed your Showpass event within your event's official page. The Showpass Event Widget lets user purchase products and tickets without leaving your webpage!</p>
+                    </section>
+                    <section>
+                        <h2>Integration</h2>
+                        <p>You only need to do a few steps to integrate the Showpass Event Widget into your event's official page.</p>
+                        <pre>
+                        <code>
+&lt;script type="text/javascript"&gt;
+(function(window,document,src){var config=window.__shwps;if(typeof config==="undefined"){config=function(){config.c(arguments)};config.q=[];config.c=function(args){config.q.push(args)};window.__shwps=config;var s=document.createElement('script');s.type='text/javascript';s.async=!0;s.src=src;var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x)}})(window,document,'https://www.myshowpass.com/static/dist/sdk.js')&lt;/script&gt;</code>
+                        </pre>
+                    </section>
+                    <footer>
+                        <h3>article footer h3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+                    </footer>
+                </article>
+
+                <aside>
+
+                </aside>
+
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>footer</h3>
+            </footer>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
