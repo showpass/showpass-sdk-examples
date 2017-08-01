@@ -50,26 +50,33 @@ To use, change the event slug to event that you wish to sell for.
         var x = document.getElementsByTagName('script')[0];
         x.parentNode.insertBefore(s, x);
       }
-    })(window, document, 'https://beta.myshowpass.com/static/dist/sdk.js');
+    })(window, document, 'http://192.168.1.21:8000/static/dist/sdk.js');
   </script>
 
 </head>
 <body>
 <div>
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br /><br /><br /><br />
   <div style="text-align: center">
-    <button onclick="showpass.tickets.eventPurchaseWidget('free-event', {'theme-primary': '#333333', 'keep-shopping': false})"> <!-- CONFIGURE EVENT SLUG HERE -->
-      Free Event - Keep Shopping False
+    <button onclick="showpass.tickets.eventPurchaseWidget('new-event', {'theme-primary': '#00d2ff', 'keep-shopping': false})">
+      New Event
     </button>
-    <button onclick="showpass.tickets.eventPurchaseWidget('bundle-child-event', {'theme-primary': '#333333'})"> <!-- CONFIGURE EVENT SLUG HERE -->
-      Bundle Child Event - Keep Shopping True
+    <button onclick="showpass.tickets.eventPurchaseWidget('redirect-event', {'theme-primary': '#00d2ff', 'theme-dark': true, 'keep-shopping': false})">
+      Redirect
     </button>
-    <button onclick="showpass.tickets.eventPurchaseWidget('test-assigned-seating', {'theme-primary': '#333333', 'keep-shopping': false})"> <!-- CONFIGURE EVENT SLUG HERE -->
+    <!--<button onclick="showpass.tickets.eventPurchaseWidget('new-event', {'theme-primary': '#333333'})">
+      New Event - Keep Shopping True
+    </button>
+    <button onclick="showpass.tickets.eventPurchaseWidget('test-assigned-seating', {'theme-primary': '#333333', 'keep-shopping': false})">
       Test Assign Seating - False
     </button>
-    <button onclick="showpass.tickets.eventPurchaseWidget('new-password', {'theme-primary': '#333333', 'keep-shopping': true})"> <!-- CONFIGURE EVENT SLUG HERE -->
+    <button onclick="showpass.tickets.eventPurchaseWidget('new-password', {'theme-primary': '#333333', 'keep-shopping': true})">
       Password is Password - True
-    </button>
-    <button onclick="showpass.tickets.checkoutWidget({'theme-primary': '#333333', 'keep-shopping': true})"> <!-- CONFIGURE EVENT SLUG HERE -->
+    </button>-->
+    <button onclick="showpass.tickets.checkoutWidget({'theme-primary': '#00d2ff', 'keep-shopping': true})">
       Checkout Widget
     </button>
   </div>

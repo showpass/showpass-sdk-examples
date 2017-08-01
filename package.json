@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Contains various examples demonstrating how to use the Showpass SDK. ",
   "devDependencies": {
-    "gulp": "3.9.1",
+    "gulp": "^3.9.1",
     "gulp-connect": "5.0.0",
     "gulp-webserver": "0.9.1"
   },
@@ -11,5 +11,12 @@
     "start": "gulp serve"
   },
   "author": "Showpass",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "buffer-shims": "^1.0.0",
+    "lru-cache": "^4.1.1",
+    "process-nextick-args": "^1.0.7",
+    "sigmund": "^1.0.1",
+    "util-deprecate": "^1.0.2"
+  }
 }
