@@ -55,6 +55,10 @@ jQuery.noConflict();
         'keep-shopping': true
       });
     });
+
+    $('code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
   });
 
 })(jQuery);

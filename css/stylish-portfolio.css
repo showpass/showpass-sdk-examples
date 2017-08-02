@@ -248,3 +248,14 @@ footer {
   bottom: 5px;
   right: 5px;
 }
+
+pre {
+  background: none !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+code {
+  padding: 20px !important;
+}

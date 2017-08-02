@@ -13,6 +13,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:200,300,400,500,600,700,800" rel="stylesheet">
 
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -61,11 +64,35 @@
 
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Showpass</h1>
-            <h3>Check out our widget!</h3>
-            <span onclick="showpass.tickets.eventPurchaseWidget('showpass-festival-2017', {'theme-primary': '#dd3333', 'theme-dark': false})" class="btn btn-dark btn-lg">Open Widget</span>
 
+        <div class="text-vertical-center">
+          <div class="col-md-4 col-md-offset-4">
+            <h1>Showpass SDK</h1>
+            <p>Our SDK allows you to embed ticket purchases directly on your website!</p>
+            <pre>
+              <code class="atom-one-dark text-left">(function (window, document, src) {
+  var config = window.__shwps;
+  if (typeof config === "undefined") {
+    config = function () {
+      config.c(arguments)
+    };
+    config.q = [];
+    config.c = function (args) {
+      config.q.push(args)
+    };
+    window.__shwps = config;
+
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = src;
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+})(window, document, 'https://myshowpass.com/static/dist/sdk.js');</code>
+            </pre>
+            <span onclick="showpass.tickets.eventPurchaseWidget('showpass-festival-2017', {'theme-primary': '#dd3333', 'theme-dark': false})" class="btn btn-dark btn-lg">Open Widget</span>
+          </div>
         </div>
     </header>
 
@@ -263,6 +290,9 @@
 
     <!-- JS Cookie -->
     <script src="js/vendor/js-cookie.js"></script>
+
+    <!-- highlight -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
     <!-- Showpass SDK -->
     <script src="js/showpass.js"></script>
