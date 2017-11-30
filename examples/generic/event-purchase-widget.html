@@ -1,12 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
 <!--
 eventPurchaseWidget Demo
 
 To use, change the event slug to event that you wish to sell for.
 
 -->
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
@@ -16,64 +15,13 @@ To use, change the event slug to event that you wish to sell for.
       background-repeat: no-repeat;
       background-size: cover;
     }
-
-    .widget {
-      display: none;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-    }
   </style>
-
-  <!-- SHOWPASS SDK HEADER -->
-  <script type="text/javascript">
-    (function (window, document, src) {
-      var config = window.__shwps;
-      if (typeof config === "undefined") {
-        config = function () {
-          config.c(arguments)
-        };
-        config.q = [];
-        config.c = function (args) {
-          config.q.push(args)
-        };
-        window.__shwps = config;
-
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = src;
-        var x = document.getElementsByTagName('script')[0];
-        x.parentNode.insertBefore(s, x);
-      }
-    })(window, document, 'http://192.168.1.21:8000/static/dist/sdk.js');
-  </script>
-
 </head>
 <body>
 <div>
-  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   <br /><br /><br /><br /><br /><br /><br /><br />
   <div style="text-align: center">
-    <button onclick="showpass.tickets.eventPurchaseWidget('new-event', {'theme-primary': '#00d2ff', 'keep-shopping': false})">
-      New Event
-    </button>
-    <button onclick="showpass.tickets.eventPurchaseWidget('redirect-event', {'theme-primary': '#00d2ff', 'theme-dark': true, 'keep-shopping': false})">
-      Redirect
-    </button>
-
-    <!--<button onclick="showpass.tickets.eventPurchaseWidget('test-assigned-seating', {'theme-primary': '#00d2ff', -->
-                                                                        <!--'theme-dark': true,-->
-                                                                        <!--'keep-shopping': false, -->
-                                                                        <!--'tracking-id': 'c3e30b5f'})">-->
-      <!--Event with tracking link-->
-    <!--</button>-->
+    <button onclick="showpass.tickets.eventPurchaseWidget('test-free', {'theme-primary': '#333333'})">Buy Tickets</button>
 
     <!--<button onclick="showpass.tickets.eventPurchaseWidget('new-event', {'theme-primary': '#333333'})">
       New Event - Keep Shopping True
@@ -87,10 +35,34 @@ To use, change the event slug to event that you wish to sell for.
       Password is Password - True
     </button>-->
 
-    <button onclick="showpass.tickets.checkoutWidget({'theme-primary': '#00d2ff', 'keep-shopping': true})">
+    <button onclick="showpass.tickets.checkoutWidget({'theme-primary': '#9e2a2b', 'keep-shopping': true, 'tracking-id': '8ae7ecaa'})">
       Checkout Widget
     </button>
   </div>
 </div>
+
+    <script type="text/javascript">
+      (function (window, document, src) {
+        var config = window.__shwps;
+        if (typeof config === "undefined") {
+          config = function () {
+            config.c(arguments)
+          };
+          config.q = [];
+          config.c = function (args) {
+            config.q.push(args)
+          };
+          window.__shwps = config;
+
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = src;
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+      })(window, document, 'http://local.myshowpass.com:8000/static/dist/sdk.js');
+    </script>
+
 </body>
 </html>
