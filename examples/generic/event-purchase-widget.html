@@ -8,34 +8,28 @@ To use, change the event slug to event that you wish to sell for.
 -->
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background-color: black;
-      background-image: url(assets/img/events-bg.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  </style>
 </head>
 <body>
 <div>
   <br /><br /><br /><br /><br /><br /><br /><br />
   <div style="text-align: center">
-    <button onclick="showpass.tickets.eventPurchaseWidget('test-free', {'theme-primary': '#333333'})">Buy Tickets</button>
-
-    <!--<button onclick="showpass.tickets.eventPurchaseWidget('new-event', {'theme-primary': '#333333'})">
-      New Event - Keep Shopping True
-    </button>
-
-    <button onclick="showpass.tickets.eventPurchaseWidget('test-assigned-seating', {'theme-primary': '#333333', 'keep-shopping': false})">
+    <button onclick="showpass.tickets.eventPurchaseWidget('woah-nelly', {'theme-primary': '#53c2e8'})">normal-event</button>
+    <button onclick="showpass.tickets.loginWidget({'theme-primary': '#333333'})">Login Widget</button>
+    <button onclick="showpass.tickets.eventPurchaseWidget('bypass-password', {'theme-primary': '#333333', 'tracking-id': 'c8082cb2'})">Bypass Password</button>
+    <button onclick="showpass.tickets.eventPurchaseWidget('show-hidden', {'theme-primary': '#333333', 'tracking-id': 'df1611e9'})">Show Hidden</button>
+    <button onclick="showpass.tickets.eventPurchaseWidget('do-both', {'theme-primary': '#333333', 'tracking-id': '7da173d3'})">Do Both</button>
+    <button onclick="showpass.tickets.eventPurchaseWidget('assigned-seating', {'theme-primary': '#333333'})">Assigned Seating</button>
+    <!--<button onclick="showpass.tickets.eventPurchaseWidget('test-assigned-seating', {'theme-primary': '#333333', 'keep-shopping': false})">
       Test Assign Seating - False
     </button>
 
     <button onclick="showpass.tickets.eventPurchaseWidget('new-password', {'theme-primary': '#333333', 'keep-shopping': true})">
       Password is Password - True
     </button>-->
-
-    <button onclick="showpass.tickets.checkoutWidget({'theme-primary': '#9e2a2b', 'keep-shopping': true, 'tracking-id': '8ae7ecaa'})">
+    <button onclick="showpass.tickets.shoppingCartWidget({'theme-primary': '#9e2a2b'})">
+      Cart Widget
+    </button>
+    <button onclick="showpass.tickets.checkoutWidget({'theme-primary': '#9e2a2b'})">
       Checkout Widget
     </button>
   </div>
@@ -61,8 +55,45 @@ To use, change the event slug to event that you wish to sell for.
           var x = document.getElementsByTagName('script')[0];
           x.parentNode.insertBefore(s, x);
         }
-      })(window, document, 'http://local.myshowpass.com:8000/static/dist/sdk.js');
+      })(window, document, 'http://local.showpass.com:8000/static/dist/sdk.js');
     </script>
+    <a href="http://local.showpass.com:8000/woah-nelly">Test Link</a>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-13057225-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'UA-13057225-3', {
+            'linker': {
+                'domains': ['showpass.com']
+            }
+        });
+
+        const mutationObserver = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                let clientID = '';
+                if (mutation.target.className == 'showpass-widget-body') {
+                    ga.getAll().forEach(function(tracker) {
+                        clientID = tracker.get('clientId');
+                    });
+                }
+                if (clientID != '') {
+                    var gobj = window[window.GoogleAnalyticsObject];
+                    var tracker, linker;
+                    let iFrame = document.getElementById('showpass-widget');
+                    if (gobj) {
+                        tracker = gobj.getAll()[0];
+                        linker = new window.gaplugins.Linker(tracker);
+                        iFrame.src = linker.decorate(iFrame.src);
+                    }
+                }
+            });
+        });
+
+        mutationObserver.observe(document.documentElement, { attributes: true });
+
+    </script>
 </body>
 </html>
