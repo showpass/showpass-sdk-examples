@@ -73,13 +73,7 @@ To use, change the event slug to event that you wish to sell for.
 
         const mutationObserver = new MutationObserver(function(mutations) {
             mutations.forEach(function(mutation) {
-                let clientID = '';
                 if (mutation.target.className == 'showpass-widget-body') {
-                    ga.getAll().forEach(function(tracker) {
-                        clientID = tracker.get('clientId');
-                    });
-                }
-                if (clientID != '') {
                     var gobj = window[window.GoogleAnalyticsObject];
                     var tracker, linker;
                     let iFrame = document.getElementById('showpass-widget');
@@ -89,6 +83,7 @@ To use, change the event slug to event that you wish to sell for.
                         iFrame.src = linker.decorate(iFrame.src);
                     }
                 }
+
             });
         });
 
